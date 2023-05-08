@@ -1,3 +1,8 @@
-body {
-  background-color: #b8be19!important;
+hr {
+  border-color: #b8be19!important;
 }
+.accordion
+{
+  --bs-accordion-active-bg: #b8be19!important;
+}
+
