@@ -6,3 +6,8 @@ hr {
   scroll-margin-top: 100px;
 }
 
+@media only screen and (max-width: 990px) {
+  * {
+    scroll-margin-top: 270px;
+  }
+}

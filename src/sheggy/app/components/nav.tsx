@@ -16,6 +16,8 @@ export default function NavBar() {
     elem?.scrollIntoView({
       behavior: "smooth",
     });
+
+    setToggler(false);
   };
 
   const [activeMenu, setActiveMenu] = useState({
@@ -24,6 +26,8 @@ export default function NavBar() {
     tokenomics: false,
     roadmap: false,
   });
+
+  const [toggler, setToggler] = useState(false);
 
   return (
     <nav className="navbar navbar-expand-lg sticky-top bg-body-tertiary justify-content-center mb-4">
@@ -38,11 +42,20 @@ export default function NavBar() {
           />
           Sheggy
         </a>
-        <button className="navbar-toggler" type="button">
+        <button
+          className="navbar-toggler"
+          type="button"
+          ata-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          onClick={() => setToggler(!toggler)}
+        >
           <span className="navbar-toggler-icon"></span>
         </button>
         <div
-          className="ms-5 collapse navbar-collapse"
+          className={`${!toggler ? "collapse" : ""} navbar-collapse`}
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">

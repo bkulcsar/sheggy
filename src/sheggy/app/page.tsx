@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import sheggy_scuvi from "./sheggy_scuvi.png";
 import car from "./car.png";
