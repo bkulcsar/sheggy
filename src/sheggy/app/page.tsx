@@ -3,6 +3,7 @@
 import Image from "next/image";
 import sheggy_scuvi from "./sheggy_scuvi.png";
 import car from "./car.png";
+import toTheMoon from "./to_the_moon.png";
 import token_allocation from "./token_allocation.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -39,7 +40,9 @@ export default function Home() {
             </div>
             <div className="row justify-content-center">
               <div className="col-2">
-                <FontAwesomeIcon icon={faTwitter} size="2x" />
+                <a href="https://twitter.com/sheggyCoin">
+                  <FontAwesomeIcon icon={faTwitter} size="2x" />
+                </a>
               </div>
               <div className="col-2">
                 <FontAwesomeIcon icon={faDiscord} size="2x" />
@@ -49,7 +52,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-lg-6 col-sm-12">
+          <div className="col-lg-6 col-sm-12 text-center">
             <Image src={sheggy_scuvi} height={300} alt={""}></Image>
           </div>
         </div>
@@ -134,7 +137,7 @@ export default function Home() {
               <strong>Contract Address: in progress...</strong>
             </p>
           </div>
-          <div className="col justify-content-center">
+          <div className="col-lg-6 col-sm-12 justify-content-center text-center">
             <Image src={token_allocation} height={450} alt={""}></Image>
           </div>
         </div>
@@ -151,6 +154,9 @@ export default function Home() {
               roadmap - he is a shitcoin with no spectations or intrinsic
               value.. but then again is there value in anything at all?
             </p>
+          </div>
+          <div className="col-lg-6 col-sm-12 text-center">
+            <Image src={toTheMoon} height={200} alt={""}></Image>
           </div>
         </div>
       </div>
