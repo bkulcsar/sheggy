@@ -2,3 +2,7 @@ hr {
   border-color: #b8be19!important;
 }
 
+* {
+  scroll-margin-top: 100px;
+}
+

@@ -4,47 +4,70 @@ import Image from "next/image";
 import sheggy_scuvi from "./sheggy_scuvi.png";
 import car from "./car.png";
 import token_allocation from "./token_allocation.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTwitter,
+  faDiscord,
+  faTelegram,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
   return (
     <main>
       <div className="container">
-        <div className="row">
-          <div className="col ">
-            <h1 id="about">$SHGGY</h1>
-            <p>
-              Sheggy is THE high tier quality meme coin. He is the truest
-              representor of our state of mind when we decide to jump into the
-              market, always overdosed under the influence of copium, hopium,
-              denial and greed. Sheggys always likes to munch on his best pal
-              Scubby's scubby snack and maybe for that reason, he is unable to
-              speak normally. Now that Sheggy has arguably lost his mind after
-              the countless of failed trades, he is seeking one and one thing
-              only: conquering the crypto space as a currency himself and became
-              the canine professor of the doggos. With your help, he can achieve
-              that and he can finally have piece if nothing else. Do not be like
-              Sheggy who always buy high and sell low, this is your opportunity
-              to hop in and buckle up for a hopium rocket ride!
-            </p>
+        <div className="row" id="about">
+          <div className="col-lg-6 col-sm-12">
+            <div className="row">
+              <div className="col">
+                <h1>$SHGGY</h1>
+                <p>
+                  Sheggy is THE high tier quality meme coin. He is the truest
+                  representor of our state of mind when we decide to jump into
+                  the market, always overdosed under the influence of copium,
+                  hopium, denial and greed. Sheggys always likes to munch on his
+                  best pal Scubby's scubby snack and maybe for that reason, he
+                  is unable to speak normally. Now that Sheggy has arguably lost
+                  his mind after the countless of failed trades, he is seeking
+                  one and one thing only: conquering the crypto space as a
+                  currency himself and became the canine professor of the
+                  doggos. With your help, he can achieve that and he can finally
+                  have piece if nothing else. Do not be like Sheggy who always
+                  buy high and sell low, this is your opportunity to hop in and
+                  buckle up for a hopium rocket ride!
+                </p>
+              </div>
+            </div>
+            <div className="row justify-content-center">
+              <div className="col-2">
+                <FontAwesomeIcon icon={faTwitter} size="2x" />
+              </div>
+              <div className="col-2">
+                <FontAwesomeIcon icon={faDiscord} size="2x" />
+              </div>
+              <div className="col-2">
+                <FontAwesomeIcon icon={faTelegram} size="2x" />
+              </div>
+            </div>
           </div>
-          <div className="col">
+          <div className="col-lg-6 col-sm-12">
             <Image src={sheggy_scuvi} height={300} alt={""}></Image>
           </div>
         </div>
-        <div id="how-to-buy" className="row">
+
+        <div className="row">
           <div className="col">
             <hr className="hr border-3 opacity-50" />
           </div>
         </div>
-        <div className="row ">
-          <div className="col">
+        <div className="row" id="how-to-buy">
+          <div className="col ">
             <div className="row">
               <div className="col">
                 <h1>how to buy</h1>
               </div>
             </div>
             <div className="row align-items-center">
-              <div className="col text-center ">
+              <div className="col-lg-6 col-sm-12 text-center">
                 <Image src={car} height={300} alt={""}></Image>
               </div>
               <div className="col">
@@ -97,7 +120,7 @@ export default function Home() {
             <hr className="hr border-3 opacity-50" />
           </div>
         </div>
-        <div id="how-to-buy" className="row">
+        <div id="tokenomics" className="row">
           <div className="col">
             <h1>tokenomics</h1>
             <p>
@@ -105,15 +128,14 @@ export default function Home() {
               no blacklist or any restriction possibilities. It's a pure ERC20
               OpenZeppelin contract.
             </p>
-            <p>LP tokens locked.</p>
+            <p>LP tokens are locked.</p>
             <p>Total supply: 200,000,000,000,000</p>
             <p>
-              <strong>Contract Address: 0x000000000000000</strong>
+              <strong>Contract Address: in progress...</strong>
             </p>
           </div>
-          <div className="col">
-            {" "}
-            <Image src={token_allocation} height={400} alt={""}></Image>
+          <div className="col justify-content-center">
+            <Image src={token_allocation} height={450} alt={""}></Image>
           </div>
         </div>
         <div className="row">
@@ -121,7 +143,7 @@ export default function Home() {
             <hr className="hr border-3 opacity-50" />
           </div>
         </div>
-        <div id="how-to-buy" className="row">
+        <div id="roadmap" className="row">
           <div className="col">
             <h1>roadmap</h1>
             <p>
