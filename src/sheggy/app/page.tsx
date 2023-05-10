@@ -1,9 +1,4 @@
 "use client";
-import Image from "next/image";
-import sheggy_scuvi from "./sheggy_scuvi.png";
-import car from "./car.png";
-import toTheMoon from "./to_the_moon.png";
-import token_allocation from "./token_allocation.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
@@ -52,7 +47,7 @@ export default function Home() {
             </div>
           </div>
           <div className="col-lg-6 col-sm-12 text-center">
-            <Image src={sheggy_scuvi} height={300} alt={""}></Image>
+            <img src="/sheggy_scuvi.png" className="w-75 h-auto"></img>
           </div>
         </div>
 
@@ -70,7 +65,7 @@ export default function Home() {
             </div>
             <div className="row align-items-center">
               <div className="col-lg-6 col-sm-12 text-center">
-                <Image src={car} height={300} alt={""}></Image>
+                <img src="/car.png" className="w-50 h-auto"></img>
               </div>
               <div className="col">
                 <ol className="list-group list-group-numbered">
@@ -137,7 +132,7 @@ export default function Home() {
             </p>
           </div>
           <div className="col-lg-6 col-sm-12 justify-content-center text-center">
-            <Image src={token_allocation} height={450} alt={""}></Image>
+            <img src="/token_allocation.png" className="w-75 h-auto"></img>
           </div>
         </div>
         <div className="row">
@@ -155,7 +150,7 @@ export default function Home() {
             </p>
           </div>
           <div className="col-lg-6 col-sm-12 text-center">
-            <Image src={toTheMoon} height={200} alt={""}></Image>
+            <img src="/to_the_moon.png" className="img-fluid"></img>
           </div>
         </div>
       </div>

@@ -3,6 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 
 export default function NavBar() {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
@@ -16,8 +18,6 @@ export default function NavBar() {
     elem?.scrollIntoView({
       behavior: "smooth",
     });
-
-    setToggler(false);
   };
 
   const [activeMenu, setActiveMenu] = useState({
@@ -27,10 +27,13 @@ export default function NavBar() {
     roadmap: false,
   });
 
-  const [toggler, setToggler] = useState(false);
-
   return (
-    <nav className="navbar navbar-expand-lg sticky-top bg-body-tertiary justify-content-center mb-4">
+    <Navbar
+      sticky="top"
+      expand="lg"
+      bg="light"
+      className="justify-content-center mb-4"
+    >
       <div className="container-fluid ">
         <a className="navbar-brand" href="#">
           <Image
@@ -42,22 +45,8 @@ export default function NavBar() {
           />
           Sheggy
         </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          ata-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-          onClick={() => setToggler(!toggler)}
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div
-          className={`${!toggler ? "collapse" : ""} navbar-collapse`}
-          id="navbarSupportedContent"
-        >
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <Link
@@ -130,8 +119,8 @@ export default function NavBar() {
               </Link>
             </li>
           </ul>
-        </div>
+        </Navbar.Collapse>
       </div>
-    </nav>
+    </Navbar>
   );
 }
