@@ -150,7 +150,7 @@ export default function Home() {
             </p>
           </div>
           <div className="col-lg-6 col-sm-12 text-center">
-            <img src="/to_the_moon.png" className="img-fluid"></img>
+            <img src="/roadmap.png" className="img-fluid"></img>
           </div>
         </div>
       </div>
