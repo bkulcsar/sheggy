@@ -167,7 +167,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3 col-6 text-center">
+              <div className="col-lg-3 col-6 text-center mt-5 mt-lg-0">
                 <img src="/roadmap.png" className="img-fluid"></img>
               </div>
               <div className="col-lg-3 col-0"></div>
