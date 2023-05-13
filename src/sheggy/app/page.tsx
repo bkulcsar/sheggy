@@ -11,7 +11,7 @@ export default function Home() {
     <main>
       <div className="container">
         <div className="row" id="about">
-          <div className="col-lg-6 col-sm-12">
+          <div className="col-lg-6 col-12">
             <div className="row">
               <div className="col">
                 <h1>$SHGGY</h1>
@@ -46,7 +46,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-lg-6 col-sm-12 text-center">
+          <div className="col-lg-6 col-12 text-center">
             <img src="/sheggy_scuvi.png" className="w-75 h-auto"></img>
           </div>
         </div>
@@ -64,7 +64,7 @@ export default function Home() {
               </div>
             </div>
             <div className="row align-items-center">
-              <div className="col-lg-6 col-sm-12 text-center">
+              <div className="col-lg-6 col-12 text-center">
                 <img src="/car.png" className="w-50 h-auto"></img>
               </div>
               <div className="col">
@@ -131,7 +131,7 @@ export default function Home() {
               <strong>Contract Address: in progress...</strong>
             </p>
           </div>
-          <div className="col-lg-6 col-sm-12 justify-content-center text-center">
+          <div className="col-lg-6 col-12 justify-content-center text-center">
             <img src="/token_allocation.png" className="w-75 h-auto"></img>
           </div>
         </div>
@@ -142,15 +142,66 @@ export default function Home() {
         </div>
         <div id="roadmap" className="row">
           <div className="col">
-            <h1>roadmap</h1>
-            <p>
-              $SHGGY is doesn't guarantee anything, there's no formal team or
-              roadmap - he is a shitcoin with no spectations or intrinsic
-              value.. but then again is there value in anything at all?
-            </p>
-          </div>
-          <div className="col-lg-6 col-sm-12 text-center">
-            <img src="/roadmap.png" className="img-fluid"></img>
+            <h1 className="">roadmap</h1>
+            <div className="row">
+              <div className="col-6 mt-3">
+                <div className="card border-success">
+                  <div className="card-body text-success">
+                    <h5 className="card-title">Phase 1</h5>
+
+                    <ul className="list-group list-group-flush">
+                      <li className="list-group-item text-success">
+                        Create Twitter account and Website
+                      </li>
+
+                      <li className="list-group-item bg-success-subtle">
+                        Build a $SHGGY community
+                      </li>
+                      <li className="list-group-item">
+                        Smart Contract and Fairlaunch creation on PinkSale
+                      </li>
+                      <li className="list-group-item">
+                        LP creation and LP lock
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-3 col-6 text-center">
+                <img src="/roadmap.png" className="img-fluid"></img>
+              </div>
+              <div className="col-lg-3 col-0"></div>
+              <div className="col-6 mt-3">
+                <div className="card">
+                  <div className="card-body">
+                    <h5 className="card-title">Phase 2</h5>
+                    <ul className="list-group list-group-flush">
+                      <li className="list-group-item">Post-launch Marketing</li>
+                      <li className="list-group-item">
+                        CoinGecko/CoinMarketCap Listings
+                      </li>
+                      <li className="list-group-item">1,000+ Holders</li>
+                      <li className="list-group-item">
+                        NFT Airdrop to the active holders with gamification
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="col-6"></div>
+              <div className="col-6 mt-3">
+                <div className="card">
+                  <div className="card-body">
+                    <h5 className="card-title">Phase 3</h5>
+                    <ul className="list-group list-group-flush">
+                      <li className="list-group-item">DAO creation</li>
+                      <li className="list-group-item">10,000+ Holders</li>
+                      <li className="list-group-item">CEX Listing</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
