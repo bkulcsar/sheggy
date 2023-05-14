@@ -33,16 +33,10 @@ export default function Home() {
               </div>
             </div>
             <div className="row justify-content-center">
-              <div className="col-2">
+              <div className="col-1">
                 <a href="https://twitter.com/sheggyCoin">
                   <FontAwesomeIcon icon={faTwitter} size="2x" />
                 </a>
-              </div>
-              <div className="col-2">
-                <FontAwesomeIcon icon={faDiscord} size="2x" />
-              </div>
-              <div className="col-2">
-                <FontAwesomeIcon icon={faTelegram} size="2x" />
               </div>
             </div>
           </div>
