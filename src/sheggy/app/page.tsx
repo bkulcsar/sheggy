@@ -126,9 +126,17 @@ export default function Home() {
               OpenZeppelin contract.
             </p>
             <p>LP tokens are locked.</p>
-            <p>Total supply: 200,000,000,000,000</p>
+            <p>Total supply: 173,960,000,000,000</p>
             <p>
-              <strong>Contract Address: in progress...</strong>
+              <strong>
+                Contract Address:{" "}
+                <a
+                  href="https://etherscan.io/address/0x1a865b1d205713e5e392e7f7f83edd66851b6f43"
+                  target="_blank"
+                >
+                  0x1A865B1D205713E5e392E7F7f83edd66851B6f43
+                </a>
+              </strong>
             </p>
           </div>
           <div className="col-lg-6 col-12 justify-content-center text-center">
