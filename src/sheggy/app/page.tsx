@@ -209,6 +209,28 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="row">
+          <div className="col">
+            <hr className="hr border-3 opacity-50" />
+          </div>
+        </div>
+        <div id="partners" className="row">
+          <div className="col">
+            <h1 className="">partners</h1>
+            <div className="row align-items-center">
+              <div className="col text-center">
+                <a href="https://www.pinksale.finance" target="_blank">
+                  <img src="/pinksale.webp" className="w-75 h-auto"></img>
+                </a>
+              </div>
+              <div className="col text-center">
+                <a href="https://www.dexview.com/" target="_blank">
+                  <img src="/dexview.png" className="w-75 h-auto"></img>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   );
