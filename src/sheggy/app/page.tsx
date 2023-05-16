@@ -32,7 +32,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="row justify-content-center gap-2">
+            <div className="row justify-content-center gap-4">
               <div className="col-1">
                 <a href="https://twitter.com/sheggyCoin" target="_blank">
                   <FontAwesomeIcon icon={faTwitter} size="2x" />
